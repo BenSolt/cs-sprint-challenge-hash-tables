@@ -20,9 +20,9 @@ def get_indices_of_item_weights(weights, length, limit):
 
         if (limit - weights[index]) not in cache:
 
-            # dictionary[weights index = index (the location)]
             cache[weights[index]] = index
             index += 1
+            
         else:
             # return the indexs that add up to 21, which are 1 and 3
             return [index, cache[limit -weights[index]]]

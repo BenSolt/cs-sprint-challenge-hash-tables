@@ -4,7 +4,18 @@ def intersection(arrays):
     """
     # Your code here
 
-    return result
+    #list/array
+
+    list1=[1,2,3,4,5,3,4] 
+    list2=[1,5,4,2,8,2,3]
+    outputlist =[] 
+    for item in list1:
+        if item in list2 and not in outputlist :
+            outputlist.append(item) 
+    print(outputlist) 
+
+
+    #return result
 
 
 if __name__ == "__main__":
